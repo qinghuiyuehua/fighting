@@ -37,6 +37,9 @@ import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
 Vue.use(VueAwesomeSwiper, /* { default global options } */)
 
+//   黑色透明背景
+import { Overlay } from 'vant';
+Vue.use(Overlay);
 new Vue({
   el: '#app',
   router,

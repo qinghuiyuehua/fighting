@@ -7,7 +7,9 @@
       </span>
       <span class="login_zhuce pull-right ">
         <router-link :to="{path:'/login'}" style="color: white" v-if="get1">登录|注册</router-link>
-        <router-link :to="{path:'/mine'}" v-if="get2">小人</router-link>
+        <router-link :to="{path:'/mine'}" v-if="get2">
+          <van-icon name="contact" class="contact pull-right"/>
+        </router-link>
       </span>
     </div>
       <!--当前定位城市-->
@@ -189,6 +191,12 @@
     top: 50%;
     right: 0;
     transform: translateY(-50%);
+  }
+  .contact{
+    color: white;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    margin-right: 1rem;
   }
   .nows{
     width: 100%;

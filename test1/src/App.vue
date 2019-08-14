@@ -25,7 +25,14 @@ export default {
   *{
     margin: 0;
     padding: 0;
+
+  }
+  a{
     text-decoration: none;
+    color: black;
+  }
+  li{
+    list-style: none;
   }
 #app {
   width: 100%;

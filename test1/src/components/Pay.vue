@@ -54,57 +54,57 @@
       <!--订单内容-->
       <section class="food_list">
         <header>
-          <img src="" alt="">
-          <span>{{}}</span>
+          <img src="../img/autumn.gif" alt="">
+          <span>未完待续</span>
         </header>
         <ul class="food_list_ul">
           <li class="food_item_style">
-            <p class="food_name ellipsis">{{}}</p>
+            <p class="food_name ellipsis">我们去大草原的湖边</p>
             <div class="num_price">
-              <span>x{{}}</span>
-              <span>￥{{}}</span>
+              <span>X1</span>
+              <span>30</span>
             </div>
           </li>
         </ul>
         <div class="food_item_style">
           <p class="food_name ellipsis">餐盒</p>
           <div class="num_price">
-            <span>{{}}</span>
-            <span>￥{{}}</span>
+            <span>0</span>
+            <span>0</span>
           </div>
         </div>
         <div class="food_item_style">
           <p class="food_name ellipsis">配送费</p>
           <div class="num_price">
-            <span>{{}}</span>
-            <span>￥{{}}</span>
+            <span>0</span>
+            <span>0</span>
           </div>
         </div>
         <div class="food_item_style total_price">
-          <p class="food_name ellipsis">订单￥{{}}</p>
+          <p class="food_name ellipsis">订单￥666</p>
           <div class="num_price">
-            <span>待支付￥{{}}</span>
+            <span>待支付￥666</span>
           </div>
         </div>
       </section>
       <!--备注，发票-->
       <section>
         <!--订单-->
-        <div class="header_style">
-          <span>订单备注</span>
-          <div class="more_type">
-            <span class="ellipsis">口味、偏好等</span>
-            <van-icon name="arrow" />
-          </div>
-        </div>
-        <!--发票-->
-        <div class="hongbo support_is_available">
-          <span>发票抬头</span>
-          <div class="more_type">
-            <span class="ellipsis">{{}}</span>
-            <van-icon name="arrow" />
-          </div>
-        </div>
+        <!--<div class="header_style">-->
+          <!--<span>订单备注</span>-->
+          <!--<div class="more_type">-->
+            <!--<span class="ellipsis">口味、偏好等</span>-->
+            <!--<van-icon name="arrow" />-->
+          <!--</div>-->
+        <!--</div>-->
+        <!--&lt;!&ndash;发票&ndash;&gt;-->
+        <!--<div class="hongbo support_is_available">-->
+          <!--<span>发票抬头</span>-->
+          <!--<div class="more_type">-->
+            <!--<span class="ellipsis">{{}}</span>-->
+            <!--<van-icon name="arrow" />-->
+          <!--</div>-->
+        <!--</div>-->
       </section>
       <!--尾部-->
       <section class="confrim_order">
@@ -398,12 +398,12 @@
     vertical-align: middle;
   }
   .confrim_order {
-    display: -ms-flexbox;
+    /*display: -ms-flexbox;*/
     display: flex;
     position: fixed;
-    bottom: 0;
+    bottom: 0rem;
     width: 100%;
-    height: 2rem;
+    line-height: 5rem;
   }
   .confrim_order p:first-of-type {
     background-color: #3c3c3c;

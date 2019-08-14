@@ -3,7 +3,7 @@
       <div id="bottom">
         <section id="one" @click="changes(1)">
           <router-link :to="{path:'/home'}">
-            <i class="el-icon-eleme a" :class="{changeStyle:key ==1}"></i>
+            <i class="el-icon-eleme a" :class="{changeStyle: key ==1}"></i>
             <p>外卖</p>
           </router-link>
         </section>
@@ -15,13 +15,13 @@
         </section>
         <section id="three" @click="changes(3)">
           <router-link :to="{path:'/order'}">
-            <i class="el-icon-tickets a" :class="{changeStyle:key==3}"></i>
+            <i class="el-icon-tickets a" :class="{changeStyle: key==3}"></i>
             <p>订单</p>
           </router-link>
         </section>
         <section id="four" @click="changes(4)">
           <router-link :to="{path:'/mine'}">
-            <i class="el-icon-user a" :class="{changeStyle:key==4}"></i>
+            <i class="el-icon-user a" :class="{changeStyle: key==4}"></i>
             <p>我的</p>
           </router-link>
         </section>
@@ -46,6 +46,9 @@
 </script>
 
 <style scoped>
+  a{
+    text-decoration: none;
+  }
   section{
     display: inline-block;
     text-align: center;

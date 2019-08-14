@@ -779,10 +779,11 @@
   .cardetail{
     position: absolute;
     left: 0;
-    bottom: 4rem;
+    bottom: 6rem;
     background: red;
     font-size: 3rem;
     width: 100%;
+
   }
   .detailadd{
     position: absolute;

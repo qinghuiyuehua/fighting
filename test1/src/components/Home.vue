@@ -26,16 +26,22 @@
         <swiper :options="swiperOption" class="swiper-container">
           <!--第一页轮播图-->
           <swiper-slide class="swiper1">
-            <router-link :to="{path:'/'}" v-for="(k,i) in imgsrc1" :key ="i" class="a1">
-              <img :src="'https://fuss10.elemecdn.com'+ k.image_url" alt="">
+            <router-link :to="{path:'/sort'}" v-for="(k,i) in imgsrc1" :key ="i" class="a1">
+              <span @click="save1(k.title)">
+                <img :src="'https://fuss10.elemecdn.com'+ k.image_url" alt="">
               <p>{{k.title}}</p>
+              </span>
+
             </router-link>
           </swiper-slide>
           <!--第二页轮播图-->
           <swiper-slide class="swiper2">
-            <router-link :to="{path:'/'}" v-for="(k,i) in imgsrc2" :key ="i" class="a2">
-              <img :src="'https://fuss10.elemecdn.com'+ k.image_url" alt="">
+            <router-link :to="{path:'/sort'}" v-for="(k,i) in imgsrc2" :key ="i" class="a2">
+              <span @click="save1(k.title)">
+                <img :src="'https://fuss10.elemecdn.com'+ k.image_url" alt="">
               <p>{{k.title}}</p>
+              </span>
+
             </router-link>
           </swiper-slide>
           <!--分页器-->
@@ -161,6 +167,11 @@
             console.log(abc);
             this.$router.push({path:"/shopcontent"})
           },
+          save1(name){
+            localStorage.setItem("lunboname",name);
+            console.log('000');
+            console.log(name);
+          },
         },
         created(){
           console.log(this.$store.state.a.citymsg2)
@@ -178,6 +189,7 @@
             console.log(res.data);
             this.imgsrc1 = res.data.slice(0,8);
             this.imgsrc2 = res.data.slice(8,16)
+
           });
         //请求商家列表
           this.jingdu = localStorage.getItem("jingdu");
@@ -284,7 +296,7 @@
   }
   #bot{
     background: white;
-    margin-top: 2rem;
+    margin-top: 0.8rem;
   }
   #word{
     font-size: 1.5rem;
@@ -301,16 +313,12 @@
     display: flex;
     border-bottom: .025rem solid #f1f1f1;
     padding: .7rem .4rem;
-    border: 1rem solid white;
-    border-left: none;
-    border-right: none;
   }
   .shopimg{
     /*position: absolute;*/
   }
   .jieshao{
     /*position: absolute;*/
-
   }
   .fengniao{
     display: inline-block;
